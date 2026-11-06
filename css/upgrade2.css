@@ -1,0 +1,22 @@
+/* Upgrade v2: process, why-me, FAQ, CTA band, hero polish */
+.pr4,.wy{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.pr4>div,.wy>div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;transition:transform .25s,border-color .25s}
+.pr4>div:hover,.wy>div:hover{transform:translateY(-4px);border-color:var(--p2)}
+.pr4 i{font-style:normal;display:inline-grid;place-items:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--pur),var(--p2));color:#fff;font-weight:800;font-size:.85rem;margin-bottom:12px}
+.pr4 h3{font-size:1.1rem;letter-spacing:-.02em;margin-bottom:4px}.pr4 p,.wy p{color:var(--mut);font-size:.88rem}
+.wy b{display:block;font-size:1.02rem;letter-spacing:-.02em;margin-bottom:6px}
+.wy>div{border-left:3px solid var(--pur)}
+.fq{display:grid;gap:10px;max-width:760px}
+.fq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.fq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.fq summary::after{content:"+";color:var(--pur);font-size:1.3rem;line-height:1}.fq details[open] summary::after{content:"–"}
+.fq summary::-webkit-details-marker{display:none}.fq p{color:var(--mut);font-size:.92rem;margin-top:10px}
+.cta2{padding:70px 0;text-align:center;background:linear-gradient(135deg,#0f0c1d,#2a1a7a);color:#fff;border-radius:34px;margin:30px 12px}
+.cta2 h2{color:#fff;margin:0 auto 10px;max-width:620px}.cta2 h2 em{color:#b9a6ff}.cta2 p{color:#cfc8ff;margin-bottom:22px}
+.hero .hd{font-size:1.02rem;max-width:520px}
+.st b{background:linear-gradient(90deg,var(--pur),var(--p2));-webkit-background-clip:text;color:transparent}
+.hide{display:none!important}
+html[data-theme=dark] .fq details,html[data-theme=dark] .pr4>div,html[data-theme=dark] .wy>div{background:var(--card)}
+.nav .btn.pr.sm{padding:10px 20px;white-space:nowrap}
+/* full-bleed logo artwork (Craves) */
+.lp>img{padding:0;object-fit:cover}
